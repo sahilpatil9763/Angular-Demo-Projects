@@ -1,4 +1,4 @@
-express = require('express');
+const express = require("express");  
 
 eobj = express();
 
@@ -25,3 +25,10 @@ function MarvellousBatches(request,response)
 }
 
 eobj.get('/getBatches',MarvellousBatches);
+
+function MarvellousAdmin(request,response)
+{
+    response.json({"Mobile":"9876543210","Website":"www.marvellousinfosystems.com"});
+}
+
+eobj.get('/getAdmin',MarvellousAdmin);
