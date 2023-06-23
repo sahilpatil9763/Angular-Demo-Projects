@@ -12,6 +12,6 @@ export class AppServiceService
 
   getBatches()
   {
-    return this.http.get('/app/getBatches');
+    return this.http.get('/api/getBatches');
   }
 }
