@@ -35,5 +35,5 @@ function MarvellousAdmin(request, response)
 app.get('/Demo', (request, response) => {
     response.json({
         "Data" : "Marvellous"
-    });
+    }); 
 });
